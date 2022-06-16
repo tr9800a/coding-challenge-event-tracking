@@ -1,0 +1,10 @@
+version: '3'
+
+services:
+  vehicle_tracker:
+    build: ./
+    image: challenge
+    volumes:
+      - ./:/app/
+      - ./input:/app/input
+      - ./output:/app/output
